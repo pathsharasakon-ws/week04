@@ -59,6 +59,8 @@ body {
    background-color: transparent;
    border: 2px solid var(--secondary);
    color: var(--secondary);
+   padding: 10px;
+   border-radius: 20px;
 }
 
 .site-footer {
