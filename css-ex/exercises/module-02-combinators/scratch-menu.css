@@ -12,3 +12,40 @@
    7. The li that contains .dropdown — position relative
    8. Hover over that li — .dropdown becomes visible (display: block)
    ============================================ */
+.navbar {
+   display: flex;
+   align-items: center;
+   background: darkslateblue;
+   padding: 10px 20px;
+}
+.logo {
+   color: white;
+   font-weight: bold;
+   text-decoration: none;
+}
+.nav-links {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+}
+.nav-links a {
+   color:white;
+   text-decoration: none; 
+   padding: 10px; 
+}
+.nav-links a:hover {
+   background-color: mediumseagreen;
+} 
+.dropdown {
+   display: none; 
+   position: absolute;
+   top: 100%;
+   left: 0;
+   background-color: cornflowerblue;
+}
+.nav-links li {
+   position: relative;
+}
+.nav-links li:hover .dropdown {
+   display: block;
+}

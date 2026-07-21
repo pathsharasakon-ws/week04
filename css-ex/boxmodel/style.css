@@ -7,4 +7,17 @@ div {
     border: 20px teal solid;
     border-style: ridge;
     border-radius: 20px;
+    margin: 48px 48px;
+}
+
+div.second {
+     width: 300px;
+    height: 300px;
+    background-color: palevioletred;
+    padding: 32px 64px 18px;
+    box-sizing: border-box;
+    border: 20px lightskyblue solid;
+    border-style: ridge;
+    border-radius: 20px;
+    margin: 48px 48px;
 }
