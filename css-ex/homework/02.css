@@ -1,0 +1,37 @@
+body {
+    font-family: 'Google Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 320px;
+    padding: 0px 24px 64px;
+    border: 3px blue outset;
+    box-sizing: border-box;
+}
+.card-content h1 {
+    font-size: 28px;
+}
+.card-content p {
+    font-size: 12px;
+}
+.stat p {
+    font-size: 12px;
+    font-weight: bold;
+}
+.stat h2 {
+    background-color: seagreen;
+    font-size: 48px;
+    display: inline-block;
+    padding: 6px 6px;
+    border-radius: 16px;
+    margin:auto;
+}
+.stat h3 {
+    background-color: seagreen;
+    font-size: 40px;
+    display: inline-block;
+    padding: 6px 6px;
+    border-radius: 16px;
+    margin:auto;
+}
