@@ -1,0 +1,72 @@
+* {
+    font-family: 'Google Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 40px 60px;
+}
+.section-subtitle {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.card-content h2 {
+    margin-bottom: 12px;
+}
+.card-content p {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.card-content .topic {
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.stat h3 {
+    font-size: 38px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+.stat p {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.breadth .stat h3 {
+    background-color: steelblue;
+    color: white;
+}
+.depth .stat h3 {
+    background-color: seagreen;
+    color: black;
+}
+.durability .stat-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.durability .stat h3 {
+    background-color: gold;
+    color: black;
+}
+button {
+    background-color: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 0px;
+}
