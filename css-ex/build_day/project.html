@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P Pastry</title>
+
     <!-- Font Google Sans Code -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,24 +12,25 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
+
     <!-- HEADER -->
      <header class="header">
-        <div class="announcement-bar">
+        <aside class="announcement-bar">
         <span>ENJOY FREE DELIVERY WITH ALL ORDERS OVER THB1000 *</span>
         <span>ENJOY FREE DELIVERY WITH ALL ORDERS OVER THB1000 *</span>
         <span>ENJOY FREE DELIVERY WITH ALL ORDERS OVER THB1000 *</span>
-        </div>
+        </aside>
 
         <div class="header-container">
             <a href="#" class="header-logo">
-                <img src="logo.png" alt="p pastry logo"/>
+                <img src="logo.png" alt="P Pastry logo"/>
             </a>
 
             <nav class="nav-tab">
                 <div class="menu-wrapper">
-                <button type="button" class="menu-toggle" aria-label="open menu">
-                    <img src="more.png" alt="menu"/>
-                </button>
+                    <button type="button" class="menu-toggle" aria-label="open menu">
+                        <img src="more.png" alt="menu"/>
+                    </button>
 
                 <ul class="dropdown-menu">
                     <li><a href="#">CAKE</a></li>
@@ -51,80 +53,129 @@
 
                 <button type="button" class="search" aria-label="search">
                     <img src="search.png" alt="search"/>
-                    </a>
                 </button> 
             </nav>
             
-            <div class="header-actions">
+            <aside class="header-actions">
                 <a href="#" class="action-btn" aria-label="account">
-                <img src="membership.png" alt="membership"/>
+                    <img src="membership.png" alt="membership"/>
                 </a>
                 <a href="#" class="action-btn" aria-label="cart">
-                <img src="cart.png" alt="cart"/>
+                    <img src="cart.png" alt="cart"/>
                 </a>
-            </div>
+            </aside>
         </div>
      </header>
 
      <main>
     <!-- MENU -->
-        <section class="menu">
-        <div class="menu-content">
-            <div class="menu-card">
+     <section class="menu-content">
+        <a class="menu-card" href="#">
             <img src="./limited.png" alt="limited edition"/>
             <span class="card-title">LIMITED EDITION</span>
-            </div>
-            <div class="menu-card">
+        </a>
+        <a class="menu-card" href="#">
             <img src="./signature.png" alt="signature cake"/>
             <span class="card-title">SIGNATURE CAKES</span>
-            </div>
-            <div class="menu-card">
+        </a>
+        <a class="menu-card" href="#">
             <img src="./celebrate.png" alt="celebration"/>
             <span class="card-title">CELEBRATIONS</span>
-            </div>
-            <div class="menu-card">
+        </a>
+        <a class="menu-card" href="#">
             <img src="./pastry.png" alt="pastry"/>
             <span class="card-title">PASTRY</span>
-            </div>
+        </a>
         </div>
-        </section>
+     </section>
     <!-- HIGHLIGHT -->
-        <section class="highlight">
-        <div class="highlight-content">
+     <section class="highlight-content">
+        <a href="#" aria-label="highlight">
             <img src="highlight.png" alt="highlight" class="banner-img"/>
-        </div>
-        </section>
+        </a>
+     </section>
     <!-- SIGNATURE -->
-        <section class="signature">
-        <div class="signature-content">
+     <section class="signature">
+            <h3 class="section-header">SIGNATURE CAKES</h3>
 
-        </div>
-        </section>
+            <ul class="product-grid">
+                <li>
+                    <article class="product-card">
+                        <figure>
+                            <img src="signature1.png" alt="grandma plum cobbler"/>
+                        </figure>
+                        <span class="category">COBBLER</span>
+                        <h4>GRANDMA PLUM COBBLER</h4>
+                        <p class="price">THB 220</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card">
+                        <figure>
+                            <img src="signature2.png" alt="croissant"/>
+                        </figure>
+                        <span class="category">PASTRY</span>
+                        <h4>CUSTARD CROISSANT</h4>
+                        <p class="price">THB 85</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card">
+                        <figure>
+                            <img src="signature3.png" alt="cake"/>
+                        </figure>
+                        <span class="category">CAKE</span>
+                        <h4>CHOCOLATE LAVA CAKE</h4>
+                        <p class="price">THB 175</p>
+                    </article>
+                </li>
+
+                <li>
+                    <article class="product-card">
+                        <figure>
+                            <img src="signature4.png" alt="lamington"/>
+                        </figure>
+                        <span class="category">CAKE</span>
+                        <h4>LAMINGTON</h4>
+                        <p class="price">THB 125</p>
+                    </article>
+                </li>
+            </ul>
+     </section>
     <!-- SPECIAL -->
-        <section class="special">
-        <div class="special-content">
+     <section class="special">
+        <a href="#" class="special-card large">
+            <img src="tieredcakes.png" alt="tiered cakes"/>
+            <h2>TIERED CAKES</h2>
+        </a>
 
-        </div>
-        </section>
+        <a href="#" class="special-card">
+            <img src="apparel.png" alt="apparel"/>
+            <h2>APPAREL</h2>
+        </a>
+
+        <a href="#" class="special-card">
+            <img src="retail.png" alt="retail"/>
+            <h2>RETAIL</h2>
+        </a>
+     </section>
     <!-- STORES -->
-        <section class="stores">
-        <div class="stores-content">
-
-        </div>
-        </section>
+     <section class="stores">
+        
+     </section>
     <!-- MEMBER -->
-        <section class="member">
-        <div class="member-content">
+     <section class="member">
         <form class="newsletter-form">
             <input type="email" placeholder="Your email address" required>
             <button type="submit">Join</button>
         </form>
-        </div>
-        </section>
+     </section>
      </main>
     <!-- FOOTER -->
      <footer>
-
+        <p>&copy; 2026 P Pastry. All rights reserved.</p>
      </footer>
 </body>
 </html>
