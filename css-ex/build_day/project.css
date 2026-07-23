@@ -395,3 +395,166 @@ main {
     margin: 8px 0 0 0;
     line-height: 1.2;
 }
+/* --- FOOTER SECTION --- */
+.footer {
+    background-color: black;
+    color: white;
+    margin-top: 60px;
+    padding-top: 48px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+.footer-column {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-column a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s ease;
+}
+.footer-column a:hover {
+    opacity: 0.6;
+}
+.footer-bottom-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 48px;
+    height: 40px;
+}
+/* ==========================================
+   RESPONSIVE DESIGN (สำหรับหน้าจอมือถือ <= 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* --- 1. GLOBAL LAYOUT --- */
+    main {
+        padding: 0 16px; /* ลด Padding ซ้าย-ขวา เพื่อเพิ่มพื้นที่หน้าจอ */
+    }
+
+    /* --- 2. HEADER --- */
+    .header-container {
+        padding: 12px 16px;
+        flex-wrap: wrap; /* อนุญาตให้องค์ประกอบตกลงมาบรรทัดใหม่ได้ */
+    }
+
+    .header-logo img {
+        height: 50px; /* ลดขนาดโลโก้ลง */
+    }
+
+    .nav-links {
+        display: none; /* ซ่อนลิงก์เมนูหลักบนมือถือ (ใช้ Dropdown ในเมนูแทน) */
+    }
+
+    .nav-tab {
+        padding: 8px 16px;
+    }
+
+    /* --- 3. MENU CATEGORIES SECTION --- */
+    .menu-content {
+        grid-template-columns: repeat(2, 1fr); /* ปรับจาก 4 เหลือ 2 คอลัมน์ */
+        gap: 12px;
+    }
+
+    .menu-card {
+        height: 120px; /* ลดความสูงการ์ดลง */
+    }
+
+    .card-title {
+        font-size: 16px; /* ลดขนาดฟอนต์ */
+    }
+
+    /* --- 4. HIGHLIGHT SECTION --- */
+    .highlight-content {
+        height: 240px; /* ลดความสูงแบนเนอร์ */
+        margin-top: 24px;
+    }
+
+    /* --- 5. SIGNATURE CAKES SECTION --- */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* ปรับการ์ดสินค้าเป็น 2 คอลัมน์ */
+        gap: 12px;
+    }
+
+    .product-card figure img {
+        height: 160px; /* ลดความสูงรูปสินค้า */
+    }
+
+    .product-card h3 {
+        font-size: 16px !important;
+    }
+
+    .product-card .price {
+        font-size: 14px !important;
+    }
+
+    /* --- 6. SPECIAL SECTION (BENTO GRID) --- */
+    .special {
+        grid-template-columns: 1fr; /* ปรับเป็น 1 คอลัมน์เรียงต่อกันลงมา */
+        grid-template-rows: auto;
+        gap: 12px;
+    }
+
+    .special-card.large {
+        grid-row: span 1; /* ยกเลิกการยืด 2 แถว */
+        height: 240px;
+    }
+
+    .special-card {
+        height: 180px;
+    }
+
+    /* --- 7. STORES SECTION --- */
+    .store-grid {
+        grid-template-columns: 1fr; /* ปุ่มสาขาปรับเป็น 1 คอลัมน์เต็มหน้าจอ */
+        gap: 10px;
+    }
+
+    .store-btn {
+        height: 50px;
+        font-size: 12px;
+    }
+
+    /* --- 8. MEMBER / NEWSLETTER SECTION --- */
+    .member {
+        flex-direction: column; /* เปลี่ยนแนวนอนเป็นแนวตั้ง */
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .member-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .member-info h2 {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .form-group {
+        flex-direction: column; /* ให้ช่อง E-mail กับปุ่มกด อยู่คนละบรรทัด */
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    /* --- 9. FOOTER --- */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* แบ่งฟุตเตอร์เป็น 2 คอลัมน์ */
+        gap: 32px 16px;
+        padding: 0 20px;
+    }
+}
