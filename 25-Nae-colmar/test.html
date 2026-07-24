@@ -30,9 +30,10 @@
             </div>
 
             <div class="desktop-nav">
-                <a href="#" class="logo"></a>
+                <a href="#" class="logo">
                 <img src="./capstone_colmar_assets/images/ic-logo.svg" alt="Colmar Academy Logo"/>
                 <span class="logo-text"><strong>COLMAR</strong>ACADEMY</span>
+                </a>
                 <nav class="nav-links">
                     <a href="#">On campus</a>
                     <a href="#">Online</a>
@@ -80,86 +81,102 @@
                 <article class="info-item">
                 <picture>
                     <source media="(max-width: 767px)" srcset="./capstone_colmar_assets/images/information-campus-mobile.jpg">
-                    <img src="./capstone_colmar_assets/images/information-campus.jpg" alt="Information Orientation"/>
+                    <img src="./capstone_colmar_assets/images/information-campus.jpg" alt="Information Campus"/>
                 </picture>
-            <div>
-                <img src="" alt="Information Campus"/>
-                <h3>Our campus</h3>
-                <p class="detail">Find which campus is close by you</p>
-                <a href="#">Read more</a>    
-            </div>
+                <div class="info-text">
+                    <h3>Our campus</h3>
+                    <p class="detail">Find which campus is close by you</p>
+                    <a href="#">Read more</a>    
+                </div>
+                </article>
 
-            <div>
-                <img src="./capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Information Guest Lecture"/>
-                <h3>Our guest lecture</h3>
-                <p class="detail">Find which campus is close by you</p>
-                <a href="#">Read more</a>    
+                <article class="info-item">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="./capstone_colmar_assets/images/information-guest-lecture-mobile.jpg">
+                    <img src="./capstone_colmar_assets/images/information-guest-lecture.jpg" alt="Information Guest Lecture"/>
+                </picture>
+                <div class="info-text">
+                    <h3>Our guest lecture</h3>
+                    <p class="detail">Join a keynote with Oliver Sack about music in medical treatment</p>
+                    <a href="#">Read more</a>    
+                </div>
+                </article>
             </div>
         </section>
 
         <section class="course">
             <h2>Start learning</h2>
-            <div>
-                <img src="./capstone_colmar_assets/images/course-software.jpg" alt="Software Engineer"/>
-                <h3>Software engineering</h3>
-                <p class="category">COURSES</p>
-                <p class="detail">Web Development, Mobile Development, iOT, APIs</p>
-            </div>
+            <div class="course-grid">
+                <article class="course-card">
+                    <img src="./capstone_colmar_assets/images/course-software.jpg" alt="Software Engineer"/>
+                    <h3>Software engineering</h3>
+                    <p class="category">COURSES</p>
+                    <p class="detail">Web Development, Mobile Development, iOT, APIs</p>
+                </article>
+            
+                <article class="course-card">
+                    <img src="./capstone_colmar_assets/images/course-computer-art.jpg" alt="Computer Art"/>
+                    <h3>Computer art</h3>
+                    <p class="category">COURSES</p>
+                    <p class="detail">Imaging & Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                </article>
+                
+                <article class="course-card">
+                    <img src="./capstone_colmar_assets/images/course-design.jpg" alt="Course Design"/>
+                    <h3>Design</h3>
+                    <p class="category">COURSES</p>
+                    <p class="detail">User Experience Design, User Research, Visual Design</p>
+                </article>  
+                
+                <article class="course-card">
+                    <img src="./capstone_colmar_assets/images/course-data.jpg" alt="Course Data"/>
+                    <h3>Data</h3>
+                    <p class="category">COURSES</p>
+                    <p class="detail">Data Science, Big Data, SQL, Data Visualization</p>
+                </article>
 
-            <div>
-                <img src="./capstone_colmar_assets/images/course-computer-art.jpg" alt="Computer Art"/>
-                <h3>Computer art</h3>
-                <p class="category">COURSES</p>
-                <p class="detail">Imaging & Design, Motion Graphics & Visual Effects, Computer Animation</p>
-            </div>
+                <article class="course-card">
+                    <img src="./capstone_colmar_assets/images/course-business.jpg" alt="Course Business"/>
+                    <h3>Business</h3>
+                    <p class="category">COURSES</p>
+                    <p class="detail">Product Development, Business Development, Startup</p>
+                </article>
 
-            <div>
-                <img src="./capstone_colmar_assets/images/course-design.jpg" alt="Course Design"/>
-                <h3>Design</h3>
-                <p class="category">COURSES</p>
-                <p class="detail">User Experience Design, User Research, Visual Design</p>
-            </div>
-
-            <div>
-                <img src="./capstone_colmar_assets/images/course-data.jpg" alt="Course Data"/>
-                <h3>Data</h3>
-                <p class="category">COURSES</p>
-                <p class="detail">Data Science, Big Data, SQL, Data Visualization</p>
-            </div>
-
-            <div>
-                <img src="./capstone_colmar_assets/images/course-business.jpg" alt="Course Business"/>
-                <h3>Business</h3>
-                <p class="category">COURSES</p>
-                <p class="detail">Product Development, Business Development, Startup</p>
-            </div>
-
-            <div>
-                <img src="./capstone_colmar_assets/images/course-marketing.jpg" alt="Course Marketing"/>
-                <h3>Marketing</h3>
-                <p class="category">COURSES</p>
-                <p class="detail">Analytics, Content Marketing, Mobile Marketing</p>
+                <article class="course-card">
+                    <img src="./capstone_colmar_assets/images/course-marketing.jpg" alt="Course Marketing"/>
+                    <h3>Marketing</h3>
+                    <p class="category">COURSES</p>
+                    <p class="detail">Analytics, Content Marketing, Mobile Marketing</p>
+                </article>
             </div>
         </section>
 
         <section class="thesis">
-            <div>
-                <h2>Thesis exhibit</h2>
-                <video src="./capstone_colmar_assets/videos/thesis.mp4" autoplay muted playsinline controls></video>
+            <h2>Thesis exhibit</h2>
+            <div class="thesis-container">
+                <article class="thesis-main">
+                    <video src="./capstone_colmar_assets/videos/thesis.mp4" autoplay muted playsinline controls></video>
                 <p class="category">Reimagine urban</p>
                 <p class="quote">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis esse soluta, commodi sint voluptatum illum saepe tempora architecto itaque exercitationem, officia natus quasi facilis! Id accusantium in odio! Eius, ab"</p>
-            </div>
+                </article>
 
-            <div>
-                <img src="./capstone_colmar_assets/images/thesis-fisma.jpg" alt="Thesis Fisma"/>
-                <h3>Fisma: Design and Prototype</h3>
-                <p class="detail">Designer showcase of new prototype product</p> 
-            </div>
+            <div class="thesis-list">
+                <article class="thesis-item">
+                    <img src="./capstone_colmar_assets/images/thesis-fisma.jpg" alt="Thesis Fisma"/>
+                <div class="thesis-text">
+                    <h3>Fisma: Design and Prototype</h3>
+                    <p class="detail">Designer showcase of new prototype product</p> 
+                </div>
+                </article>
 
-            <div>
-                <img src="./capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="Thesis Now and Then"/>
-                <h3>Now and then</h3>
-                <p class="detail">Research study about New York</p> 
+                <article class="thesis-item">
+                    <img src="./capstone_colmar_assets/images/thesis-now-and-then.jpg" alt="Thesis Now and Then"/>
+                <div class="thesis-text">
+                    <h3>Now and then</h3>
+                    <p class="detail">Research study about New York</p> 
+                </div>
+                </article>
+            </div>
             </div>
         </section>
     </main>
