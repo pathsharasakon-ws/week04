@@ -68,26 +68,231 @@ header {
     cursor: pointer;
 }
 /* Information Section */
-.navbar {
+.information {
+    padding: 16px 0;
+}
+.info-main {
+    display: none;
+}
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+}
+.info-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.info-text {
+    padding: 16px;
+}
+.info-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.info-text .detail {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.info-text a {
+    color: #0D6EFD;
+    font-size: 14px;
+}
+/* Course Section */
+.course {
+    padding: 32px 16px;
+    text-align: center;
+}
+.course h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.course-grid {
+    display: felx;
+    flex-direction: column;
+    gap: 8px;
+}
+.course-card {
+    background-color: white;
+    padding: 16px;
+    text-align: left;
+}
+.course-card img {
+    display: none;
+}
+.course-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.course-card .category,
+.course-card .detail {
+    display: none;
+}
+/* Thesis Section */
+.thesis {
+    padding: 32px 16px;
+    text-align: center;
+}
+.thesis h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.thesis-main video {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.thesis-main .category,
+.thesis-main .quote,
+.thesis-list {
+    display: none;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    border-top: 1px solid #D8D8D8;
+    font-size: 12px;
+    gap: 8px;
+}
+.footer-links {
+    display: none;
+}
+/* DESKTOP STYLES */
+@media (min-width: 768px) {
+/* Header & Navigation */
+.mobile-nav {
+    display: none;
+}
+.desktop-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
-    background-color: white;
+    height: 64px;
+    padding: 0 24px;
 }
-
-.desktop-nav {
+.logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
-
 .logo img {
-    height: 35px;
-    width: auto;
+    width: 32px;
+    height: 32px;
 }
-
 .logo-text {
-    font-size: 1.1rem;
+    font-size: 16px;
+    font-weight: 400;
+}
+.logo-text strong {
+    font-weight: 700;
+}
+.nav-links {
+    display: flex;
+    gap: 16px;
+}
+.nav-links a {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+/* Hero Section */
+.hero {
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 24px;
+}
+.hero-image {
+    width: 60%;
+}
+.hero-content {
+    width: 40%;
+    text-align: left;
+    padding: 0 0 0 24px;
+}
+.hero-content h1 {
+    font-size: 40px;
+}
+.hero-content button {
+    width: 100%;
+}
+/* Information */
+.information {
+    display: flex;
+    padding: 32px 24px;
+}
+.info-main {
+    display: block;
+    width: 60%;
+    padding-right: 24px;
+    border-right: 1px solid #D8D8D8;
+}
+.info-main h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 24px 0 16px 0;
+}
+.info-main .quote {
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+.info-main .author {
+    font-size: 12px;
+    font-weight: 700;
+}
+.info-list {
+    width: 40%;
+    padding: 0 0 0 24px;
+    gap: 16px;
+}
+.info-item {
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #D8D8D8;
+}
+.info-item picture,
+.info-item img {
+    width: 35%;
+    height: 100%;
+}
+.info-text {
+    width: 65%;
+    padding: 16px;
+}
+/* Course Section */
+.course {
+    padding: 32px 24px;
+}
+.course h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 24px
+}
+.course-card {
+    padding: 0;
+}
+.course-card img {
+    display: block;
+    height: 180px;
+}
+.course-card h3 {
+    padding: 16px 16px 8px 16px;
+}
+.course-card .category {
+    display: block;
+    font-size: 12px;
+    color: #808080;
+    padding: 0 16px 8px 16px;
+}
 }
